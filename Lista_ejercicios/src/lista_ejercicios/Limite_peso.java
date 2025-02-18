@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Limite_peso {
 
-    int limitePeso = 360;
+    int limitePeso = 150;
     int cant_piso = 10;
     int peso, piso;
 
