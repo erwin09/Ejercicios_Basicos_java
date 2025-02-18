@@ -12,14 +12,15 @@ public class Factura {
     public Factura() {
     }
 
-    public void tomarDatos() {
-        Scanner sc = new Scanner(System.in);
+    public void tomarDatos(Scanner sc) {
+        //Scanner sc = new Scanner(System.in);
         
         System.out.println("Escriba su nombre: ");
+        sc.nextLine();
         nombre_cliente = sc.nextLine();
         
         System.out.println("Tipo de cliente: A, B o C");
-        tipo_cliente = sc.next().charAt(tipo_cliente);
+        tipo_cliente = sc.next().charAt(0);
         
         System.out.println("Digite 1 si es estudiante o 0 si no es estudiante");
         estudiante = sc.nextInt();
@@ -32,6 +33,7 @@ public class Factura {
         
         System.out.println("Digite precio del producto: ");
         precio = sc.nextDouble();
+        
 
     }
 
