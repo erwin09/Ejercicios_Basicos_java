@@ -13,7 +13,6 @@ public class Factura {
     }
 
     public void tomarDatos(Scanner sc) {
-        //Scanner sc = new Scanner(System.in);
         
         System.out.println("Escriba su nombre: ");
         sc.nextLine();
