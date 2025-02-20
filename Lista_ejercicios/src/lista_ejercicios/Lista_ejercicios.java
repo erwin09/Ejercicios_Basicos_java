@@ -12,13 +12,14 @@ public class Lista_ejercicios {
         do {
             System.out.println("--------------------------------------------------");
             System.out.print("Listado de ejercicios: \n"
-                    + "1. Factura \n"
-                    + "2. Asensor \n"
-                    + "3. Limite peso \n"
-                    + "4. Sensor temperatura \n"
-                    + "5. Umbral temperatura \n"
-                    + "6. Asensor y temperatura \n"
-                    + "7. Salir del listado\n");
+                    + "1. Ejercicio Factura \n"
+                    + "2. Ejercicio Condicional 1 \n"
+                    + "3. Ejercicio Condicional 2 \n"
+                    + "4. Ejercicio Condicional 3\n"
+                    + "5. Ejercicio Condicional 4 \n"
+                    + "6. Ejercicio Condicional 5 \n"
+                    + "7. Ejercicio Switch-case 1 \n"
+                    + "10. Salir del listado\n");
             System.out.println("--------------------------------------------------");
             System.out.println("Seleccione una opción:");
             opcion = sc.nextInt();
@@ -26,37 +27,43 @@ public class Lista_ejercicios {
             System.out.println(" ");
             switch (opcion) {
                 case 1:
-                    Factura fac = new Factura();
+                    Ejercicio_Factura fac = new Ejercicio_Factura();
                     fac.tomarDatos(sc);
                     fac.calcularDatos();
                     fac.mostrarResultados();
                     break;
                 case 2:
-                    asensor asensor = new asensor();
+                    Condicional_1 asensor = new Condicional_1();
                     asensor.tomarDatos(sc);
                     asensor.calcularDatos();
                     break;
                 case 3:
-                    Limite_peso peso = new Limite_peso();
+                    Condicional_2 peso = new Condicional_2();
                     peso.tomarDatos(sc);
                     peso.calcularDatos();
                     break;
                 case 4:
-                    Temperatura temp = new Temperatura();
+                    Condicional_3 temp = new Condicional_3();
                     temp.tomarDatos(sc);
                     temp.calcularDatos();
                     break;
                 case 5:
-                    Umbral_temp umbral = new Umbral_temp();
+                    Condicional_4 umbral = new Condicional_4();
                     umbral.tomarDatos(sc);
                     umbral.calcularDatos();
                     break;
                 case 6:
-                    Temp_asensor mover = new Temp_asensor();
+                    condicional_5 mover = new condicional_5();
                     mover.tomarDatos(sc);
                     mover.calcularDatos();
+                    break;
+                case 7:
+                    Switch_Case_1 productos = new Switch_Case_1();
+                    productos.tomarDatos(sc);
+                   // productos.seleccionar();
+                
             }
-        } while (opcion != 7);
+        } while (opcion != 10);
 
         sc.close();
         System.out.println("Programa finalizado");
