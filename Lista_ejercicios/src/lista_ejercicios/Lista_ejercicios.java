@@ -24,6 +24,12 @@ public class Lista_ejercicios {
                     + "9. Ejercicio Switch-case 3 \n"
                     + "10. Ejercicio Switch-case 4 \n"
                     + "11. Ejercicio switch-case 5 \n"
+                    + "12. Ejercicio While 1 \n"
+                    + "13. Ejercicio While 2 \n"
+                    + "14. Ejercicio While 3 \n"
+                    + "15. Ejercicio While 4 \n"
+                    + "16. Ejercicio While 5 \n"
+                    + "17. Ejercicio While 6 \n"
                     + "20. Salir del listado\n");
             System.out.println("--------------------------------------------------");
             System.out.println("Seleccione una opción:");
@@ -78,7 +84,7 @@ public class Lista_ejercicios {
                     pelicula.calcularDatos();
                     pelicula.mostrarMensaje();
                     break;
-                case 10: 
+                case 10:
                     Switch_case_4 resultado = new Switch_case_4();
                     resultado.tomarDatos(sc);
                     resultado.actulizarDatos();
@@ -90,7 +96,34 @@ public class Lista_ejercicios {
                     restaurante.calcularDatos();
                     restaurante.mostrarDato();
                     break;
-
+                case 12:
+                    While_1 dinero = new While_1();
+                    dinero.tomarDatos(sc);
+                    dinero.calcularDatos();
+                    break;
+                case 13:
+                    While_2 tienda = new While_2();
+                    tienda.tomarDatos(sc);
+                    tienda.mostrarMensaje();
+                    break;
+                case 14:
+                    While_3 hojas = new While_3();
+                    hojas.tomarDatos(sc);
+                    break;
+                case 15:
+                    While_4 viaje = new While_4();
+                    viaje.tomarDatos(sc);
+                    break;
+                case 16:
+                    While_5 cuenta = new While_5();
+                    cuenta.tomarDatos(sc);
+                    cuenta.calcular();
+                    cuenta.mostrarMensaje();
+                    break;
+                case 17:
+                    While_6 intento = new While_6();
+                    intento.tomarDato(sc);
+                    intento.calcular(sc);
             }
         } while (opcion != 20);
 
