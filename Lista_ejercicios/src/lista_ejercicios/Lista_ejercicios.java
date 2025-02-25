@@ -30,7 +30,18 @@ public class Lista_ejercicios {
                     + "15. Ejercicio While 4 \n"
                     + "16. Ejercicio While 5 \n"
                     + "17. Ejercicio While 6 \n"
-                    + "20. Salir del listado\n");
+                    + "18. Ejercicio Do while 1 \n"
+                    + "19. Ejercicio Do while 2 \n"
+                    + "20. Ejercicio Do while 3 \n"
+                    + "21. Ejercicio Do while 4 \n"
+                    + "22. Ejercicio Do while 5 \n"
+                    + "23. Ejercicio Do while 6 \n"
+                    + "24. Ejercicio For 1 \n"
+                    + "25. Ejercicio For 2 \n"
+                    + "26. Ejercicio For 3 \n"
+                    + "27. Ejercicio For 4 \n"
+                    + "28. Ejercicio For 5 \n"
+                    + "29. Salir del listado\n");
             System.out.println("--------------------------------------------------");
             System.out.println("Seleccione una opción:");
             opcion = sc.nextInt();
@@ -124,8 +135,54 @@ public class Lista_ejercicios {
                     While_6 intento = new While_6();
                     intento.tomarDato(sc);
                     intento.calcular(sc);
+                    break;
+                case 18:
+                    Do_while_1 libro = new Do_while_1();
+                    libro.guardarLibro(sc);
+                    break;
+                case 19:
+                    Do_while_2 pedido = new Do_while_2();
+                    pedido.calcularPedido(sc);
+                    break;
+                case 20:
+                    Do_while_3 temperatura = new Do_while_3();
+                    temperatura.tomarTemperatura(sc);
+                    temperatura.calcular(sc);
+                    break;
+                case 21:
+                    Do_while_4 nota = new Do_while_4();
+                    nota.calcularPromedio(sc);
+                    break;
+                case 22:
+                    Do_while_5 tarea = new Do_while_5();
+                    tarea.calcular(sc);
+                    break;
+                case 23:
+                    Do_while_6 venta = new Do_while_6();
+                    venta.calcular(sc);
+                    break;
+                case 24:
+                    For_1 carro = new For_1();
+                    carro.calcular(sc);
+                    break;
+                case 25:
+                    For_2 articulo = new For_2();
+                    articulo.calcular(sc);
+                    break;
+                case 26:
+                    For_3 agenda = new For_3();
+                    agenda.calcular(sc);
+                    break;
+                case 27:
+                    For_4 numeros = new For_4();
+                    numeros.calcular(sc);
+                    break;
+                case 28:
+                    For_5 manofactura = new For_5();
+                    manofactura.calcular(sc);
+                    break;
             }
-        } while (opcion != 20);
+        } while (opcion != 29);
 
         sc.close();
         System.out.println("Programa finalizado");
